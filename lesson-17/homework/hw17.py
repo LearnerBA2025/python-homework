@@ -14,25 +14,25 @@ data = {
 df = pd.DataFrame(data)
 print("Original DataFrame:\n", df)
 
-# 1️⃣ Rename columns
+# 1 Rename columns
 df.rename(columns={'First Name': 'first_name', 'Age': 'age'}, inplace=True)
 print("\nRenamed Columns:\n", df)
 
-# 2️⃣ Print first 3 rows
+# 2 Print first 3 rows
 print("\nFirst 3 rows:\n", df.head(3))
 
-# 3️⃣ Find mean age
+# 3 Find mean age
 mean_age = df['age'].mean()
 print("\nMean Age:", mean_age)
 
-# 4️⃣ Select and print only 'first_name' and 'City'
+# 4 Select and print only 'first_name' and 'City'
 print("\nSelected Columns ('first_name' and 'City'):\n", df[['first_name', 'City']])
 
-# 5️⃣ Add new column 'Salary' with random values
+# 5 Add new column 'Salary' with random values
 df['Salary'] = np.random.randint(4000, 9000, size=len(df))
 print("\nAfter Adding Salary Column:\n", df)
 
-# 6️⃣ Display summary statistics
+# 6 Display summary statistics
 print("\nSummary Statistics:\n", df.describe())
 
 Original DataFrame:
@@ -93,15 +93,15 @@ sales_and_expenses = pd.DataFrame(data)
 
 print("Sales and Expenses DataFrame:\n", sales_and_expenses)
 
-# 1️⃣ Maximum values
+# 1 Maximum values
 print("\nMaximum Sales:", sales_and_expenses['Sales'].max())
 print("Maximum Expenses:", sales_and_expenses['Expenses'].max())
 
-# 2️⃣ Minimum values
+# 2 Minimum values
 print("\nMinimum Sales:", sales_and_expenses['Sales'].min())
 print("Minimum Expenses:", sales_and_expenses['Expenses'].min())
 
-# 3️⃣ Average values
+# 3 Average values
 print("\nAverage Sales:", sales_and_expenses['Sales'].mean())
 print("Average Expenses:", sales_and_expenses['Expenses'].mean())
 
@@ -131,15 +131,15 @@ print("Original Expenses DataFrame:\n", expenses)
 expenses = expenses.set_index('Category')
 print("\nDataFrame with Category as Index:\n", expenses)
 
-# 1️⃣ Maximum expense per category
+# 1 Maximum expense per category
 max_expense = expenses.max(axis=1)
 print("\nMaximum expense per category:\n", max_expense)
 
-# 2️⃣ Minimum expense per category
+# 2 Minimum expense per category
 min_expense = expenses.min(axis=1)
 print("\nMinimum expense per category:\n", min_expense)
 
-# 3️⃣ Average expense per category
+# 3 Average expense per category
 avg_expense = expenses.mean(axis=1)
 print("\nAverage expense per category:\n", avg_expense)
 
