@@ -160,4 +160,4 @@ Output (example):
   [0.73 0.28 0.61]]]
 
 
-✅ All 10 questions are fully answered with working code, correct output, and clear explanations.
+
